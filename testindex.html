@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999.xhtml" content="text/html";charset=utf-8>
+<link rel="stylesheet" href='F:\hoverbox.css' type="text/css"/ media="screen,projection">
+<link rel="stylesheet" href="F:\animate.css">
+<link rel="stylesheet" href="F:\Hover-master\css\hover-min.css" rel="stylesheet">
+<head>
+	<title  id="headtext">XHTML与浏览器的示例</title>
+	<!--<base href="http://www.w3.org" />-->
+	<style media="screen,tv" type="text/css">
+	body{
+		color:#999999;
+		font-size:20px;
+		font-weight:bold;
+	}
+	h1{font-size:72px;
+		font-weight: 
+		bolder;
+		color:red;}
+	ul {display: inline;}
+	li {display: inline;}
+	.inputt{width:125px;
+ 		 height:30px;
+  		 font-size:24px; 
+		 line-height:30px;}
+	.c2{color:aqua; font-weight: bold;}
+	.c3{font-style:italic;}
+	.center{
+    display: block;
+    position: fixed;
+    _position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 666px;
+    height:400px;
+    margin-left: -333px;
+    margin-top: -200px;
+    z-index: 10001;
+    box-shadow: 2px 2px 4px #A0A0A0, -2px -2px 4px #A0A0A0;
+	background-color: #fff;
+	}
+	.button {
+    background-color: rgb(240, 33, 95); /* Pink */
+    border: none;
+    color: white;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	font-size: 20px;
+	font-weight: bold;
+	width: 150px;
+	cursor:pointer;
+	}
+	a:hover{color: rgb(255, 166, 0);text-decoration:none}
+	b:hover(class:)
+	p:first-letter{font-size: 70px; font-family: "微软雅黑";}
+	p:first-line{font-size: 32px;}
+	#divh{width: 75%;text-align:center;margin:0 auto}
+	.frame_page{
+		width: 60%;
+		height: 720px;
+	}
+	.division{
+		clear: both;
+		float: left;
+	}
+</style>
+<script>
+	function startTime(){
+		var today=new Date();
+		var h=today.getHours();
+		var m=today.getMinutes();
+		var s=today.getSeconds();
+		m=checkTime(m);
+		s=checkTime(s);
+		document.getElementById('time').innerHTML=h+":"+m+":"+s;
+		t=setTimeout(function(){startTime()},500);
+	}	
+	function checkTime(i){
+		if(i<10){
+			i="0"+i;
+		}
+		return i;
+	}
+</script>
+</head>
+<body  onload="startTime()" link="#00acff" vlink="pink" alink="purple">
+	<div id="time" onmouseover="" class="hvr-bounce-in"></div>
+	<div style="text-decoration:line-through" class="animated bounceInLeft" >网页です</div>
+	<div align="left">
+		TTTT<a style="font-size:36px;color:red;" href="https://www.baidu.com/">百度</a>TTTT
+	</div title="看什么看">
+	<h1 class="animated bounceInDown" id="titletext" onmouseover="changeclass()">奇异博士在计算与灭霸的战斗<sup>2</sup><sub>ppp</sub>
+	<script>
+		function changeclass(){
+			document.getElementById( "titletext" ).className = "hvr-bounce-in";
+		}
+	</script></h1>
+	<hr size="40" width="90%" noshade="noshade" align="left" />
+	含有链接的图片：
+	<a href="https://www.bilibili.com/" target=" blank">
+	<img src="http://wx3.sinaimg.cn/mw690/92e8647aly1fv5gtpi73tg20bt0b6qv6.gif" alt="pic"  class="animated rotateInUpLeft"/></a>
+	<table width="600" height="260" cellspacing="1" cellpadding="20" bgcolor="#333333" text-align:center;margin:0 auto >
+		<caption>这是个啥？？？</caption>
+		<tr bgcolor="#ffffff"><td background="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1371327588,415769006&fm=173&app=25&f=JPEG?w=218&h=146&s=9945814ED2483D5FC9D89CB20300C095" width="130">表格内容1</td><td rowspan="2">表格内容2</td>
+		</tr>
+		<tr bgcolor="#ffffff"><td>表格内容3</td><td>表格内容4增加内容</td></tr>
+	</table>
+		<div id="form1">
+			用户姓名：<input type="text" name="name1" value="请填写性别" size="20"><br />
+			回复标题：<input type="text" name="name2" value="请填写胸围" size="20"><br />
+			回复内容：<br /><textarea name="name3" cols="40" rows="10"></textarea>
+			<p class="c3">爱填不填！</p>
+			<p>其实我就是想试试</p>
+			<input type="submit" name="献上">
+		</div>
+		<div  class="animated bounceOutLeft">
+			<ul id="ul1">
+				<li><a href="http://www.sina.com">1111</a></li>
+				<li><a href="http://www.baidu.com">2222</a></li>
+				<li><a href="http://www.bilibili.com">3333</a></li>
+			</ul>
+		</div>
+		<div>
+			<iframe class="frame_page" src="https://player.bilibili.com/player.html?aid=31916165&cid=55824746&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="false"> </iframe>
+		</div>
+		<p align="center"><a href="http://www.baidu.com">
+		<img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2920084749,2018893236&fm=58&s=39C718720E8EBE011B398BAC0300F024&bpow=121&bpoh=75/"></a></p>
+		<p align="center">
+			<a href="http://news.baidu.com/" name="tj_news">新&nbsp;闻</a>
+			<a href="http://www.baidu.com/" name="tj_web">网&nbsp;页</a>
+			<a href="http://tieba.baidu.com/" name="tj_tieba">贴&nbsp;吧</a>
+			<a href="http://music.baidu.com/" name="tj_music">音&nbsp;乐</a>
+			<a href="http://image.baidu.com/" name="tj_pic">图&nbsp;片</a>
+			<a href="http://video.baidu.com/" name="tj_video">视&nbsp;频</a>
+			<a href="http://map.baidu.com/" name="tj_map">地&nbsp;图</a>
+		</p>
+		<p align="center">
+			<input type="text" size="60" name="">
+			<input class="button" name="baidu" value="百度一下"></br>
+			<a href="#" class="button hvr-sweep-to-right">这么屌的吗</a>
+		</p>
+		<div id="divh" >
+		<ul class="hoverbox">
+			<li>
+			<a href="http://www.baidu.com"><img src="https://i.pximg.net/img-master/img/2018/09/17/00/00/01/70731214_p0_master1200.jpg" alt="description" /><img src="https://i.pximg.net/img-master/img/2018/09/17/00/00/01/70731214_p0_master1200.jpg" alt="description" class="preview" /></a>
+			</li>
+			<li>
+			<a href="#"><img src="https://i.pximg.net/img-master/img/2018/09/18/00/07/17/70750094_p0_master1200.jpg" alt="description" /><img src="https://i.pximg.net/img-master/img/2018/09/18/00/07/17/70750094_p0_master1200.jpg" alt="description" class="preview" /></a>
+			</li>
+			<li>
+			<a href="#"><img src="https://i.pximg.net/img-master/img/2018/09/16/01/14/08/70713990_p0_master1200.jpg" alt="description" /><img src="http://img1.gamersky.com/image2018/09/20180917_zy_164_3/029_S.jpg" alt="description" class="preview" /></a>
+			</li>
+			<li>
+			<a href="#"><img src="https://i.pximg.net/img-master/img/2018/09/17/10/15/29/70737052_p0_master1200.jpg" alt="description" /><img src="http://img1.gamersky.com/image2018/09/20180917_zy_164_3/027_S.jpg" alt="description" class="preview" /></a>
+			</li>
+		</ul>
+	</div>
+	<div class="division">
+		<script>
+			function displayDate(){
+				document.getElementById("demo").innerHTML=Date();
+			}
+			</script>
+			</head>
+			<body>
+			
+			<h1>我的第一个 JavaScript 程序</h1>
+			<p id="demo">这是一个段落</p>
+			
+			<button class="button hvr-sweep-to-right" onclick="displayDate()">显示日期</button>
+	</div>
+	<div class="division">
+		<br />
+		<button class="button hvr-sweep-to-right" onclick="alert('傻逼!')" id="liuchuan" >刘川是</button>
+		<script>
+				function FindandChange(){
+					x=document.getElementById("liuchuan");
+					x.innerHTML="刘川就是";
+				}	
+		</script>
+		<p>&nbsp;</p>
+		<button class="button hvr-sweep-to-right" onclick="FindandChange()">点我点我</button>
+	</div >
+	<script>
+			var hiddenProperty = 'hidden' in document ? 'hidden' :    
+   			 'webkitHidden' in document ? 'webkitHidden' :    
+   			 'mozHidden' in document ? 'mozHidden' :    
+   			 null;
+			var visibilityChangeEvent = hiddenProperty.replace(/hidden/i, 'visibilitychange');
+			var onVisibilityChange = function(){
+    		if (!document[hiddenProperty]) {    
+				x=document.getElementById("headtext");
+				x.innerHTML="又好啦*´∀`)";
+    		}
+			else{
+				x=document.getElementById("headtext");
+				x.innerHTML="崩溃啦(＃°Д°)";
+    		}
+		}
+		document.addEventListener(visibilityChangeEvent, onVisibilityChange);
+	</script>
+	<div class="division">
+		<script>
+			function whoissb1(){
+				x=document.getElementById("sb");
+				x.innerHTML="刘川是SB";
+			}
+			function whoissb2(){
+				x=document.getElementById("sb");
+				x.innerHTML="王鹏志是SB";
+			}
+		</script>
+			<br />
+			<button class="button hvr-sweep-to-right" onmouseout="whoissb2()" onmouseover="whoissb1()" onclick="alert('傻逼!')"  id="sb">王鹏志是SB</button>
+			<script>
+				function timeText(){
+					var x=document.getElementById('txt');
+					var t1=setTimeout(function(){x.value="刘川"},500);
+					var t2=setTimeout(function(){x.value="真是"},1000);
+					var t3=setTimeout(function(){x.value="傻逼"},1500);
+					setTimeout("timeText()",2000);
+				}
+			</script>
+			<button class="button hvr-sweep-to-right" onclick="timeText()" >开始</button>
+			<input type="text" class="inputt" id="txt"/>
+	</div>
+</body>
+</html>
